@@ -112,112 +112,8 @@
           <span class="title-decoration"></span>
           项目展示
         </h2>
-        <div class="projects-grid">
-          <!-- 项目卡片 1 -->
-          <div class="project-card fade-in-up">
-            <div class="card-media">
-              <div class="card-placeholder">
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                >
-                  <rect x="2" y="3" width="20" height="14" rx="2" />
-                  <path d="M8 21h8M12 17v4" />
-                </svg>
-                <span>项目预览</span>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">示例项目一</h3>
-              <p class="card-desc">
-                这是一个示例项目的描述。你可以在这里介绍项目的功能、技术亮点和你的贡献。
-              </p>
-              <div class="card-tags">
-                <span class="tag">Vue.js</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">MySQL</span>
-              </div>
-              <div class="card-actions">
-                <a href="#" class="btn btn-sm btn-primary">查看详情</a>
-                <a href="#" class="btn btn-sm btn-outline">源码</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 项目卡片 2 -->
-          <div class="project-card fade-in-up">
-            <div class="card-media">
-              <div class="card-placeholder">
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                >
-                  <path
-                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  />
-                </svg>
-                <span>项目预览</span>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">示例项目二</h3>
-              <p class="card-desc">另一个精彩的项目描述。展示你的技术实力和解决实际问题的能力。</p>
-              <div class="card-tags">
-                <span class="tag">React</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Docker</span>
-              </div>
-              <div class="card-actions">
-                <a href="#" class="btn btn-sm btn-primary">查看详情</a>
-                <a href="#" class="btn btn-sm btn-outline">源码</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 项目卡片 3 -->
-          <div class="project-card fade-in-up">
-            <div class="card-media">
-              <div class="card-placeholder">
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                >
-                  <path
-                    d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"
-                  />
-                  <path
-                    d="M7.5 4.21l4.5 2.6 4.5-2.6M7.5 19.79V14.6L3 12M21 12l-4.5 2.6v5.19M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"
-                  />
-                </svg>
-                <span>项目预览</span>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">示例项目三</h3>
-              <p class="card-desc">一个创新的项目，运用前沿技术解决行业痛点，展现你的创造力。</p>
-              <div class="card-tags">
-                <span class="tag">Python</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">Redis</span>
-              </div>
-              <div class="card-actions">
-                <a href="#" class="btn btn-sm btn-primary">查看详情</a>
-                <a href="#" class="btn btn-sm btn-outline">源码</a>
-              </div>
-            </div>
-          </div>
+        <div class="projects-grid" id="projects-grid">
+          <!-- 由 js/main.js 根据 projects-data.js 动态渲染 -->
         </div>
       </div>
     </section>
@@ -263,6 +159,7 @@
       </div>
     </footer>
 
+    <script src="js/projects-data.js"></script>
     <script src="js/background.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>

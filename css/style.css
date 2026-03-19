@@ -421,11 +421,29 @@ video {
   line-height: 1.6;
 }
 
+.card-result {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--accent-purple);
+  background: rgba(171, 127, 255, 0.08);
+  border: 1px solid rgba(171, 127, 255, 0.18);
+}
+
+.card-result svg {
+  flex-shrink: 0;
+  color: var(--accent-purple);
+}
+
 .card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 20px;
 }
 
 .tag {
