@@ -1,0 +1,12 @@
+{
+  "name": "lyw-show",
+  "version": "1.0.0",
+  "description": "个人项目展示页面",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
