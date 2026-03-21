@@ -42,7 +42,7 @@ def extreme_compress(input_path, output_path, target_width=640, fps=10, crf=32):
 
 if __name__ == "__main__":
     # 请确保路径正确
-    input_file = r"D:\WorkSpace\Web\lyw-show\project\langvggt.mp4"
+    input_file = r"D:\WorkSpace\Web\lyw-show\projects\OpenGL.mp4"
     output_file = "compressed_web.mp4"
 
     extreme_compress(
