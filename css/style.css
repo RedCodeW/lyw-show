@@ -355,6 +355,64 @@ video {
 /* ========================================
    Projects
    ======================================== */
+.projects-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  margin: -24px 0 32px;
+}
+
+.projects-filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: 4px;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-secondary);
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.filter-chip:hover {
+  color: var(--text-primary);
+  border-color: rgba(100, 181, 246, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.filter-chip.is-active {
+  color: var(--accent-blue);
+  border-color: rgba(100, 181, 246, 0.45);
+  background: rgba(100, 181, 246, 0.12);
+  box-shadow: 0 0 0 1px rgba(100, 181, 246, 0.08);
+}
+
+.projects-empty {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0 0 28px;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px dashed var(--glass-border);
+  background: var(--glass-bg);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -368,6 +426,10 @@ video {
   overflow: hidden;
   transition: all var(--transition-normal);
   backdrop-filter: blur(10px);
+}
+
+.project-card.is-filtered-out {
+  display: none;
 }
 
 .project-card:hover {
@@ -418,6 +480,20 @@ video {
 
 .card-body {
   padding: 24px;
+}
+
+.card-type {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  padding: 3px 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: var(--accent-purple);
+  background: rgba(171, 127, 255, 0.1);
+  border: 1px solid rgba(171, 127, 255, 0.22);
 }
 
 .card-title {

@@ -7,6 +7,7 @@ YAML 字段说明：
   - technology:  技术栈，用中文顿号或英文逗号分隔（必填）
   - result:      成果/成绩（可选，缺省则不展示）
   - bilibili:    Bilibili 视频 BV 号（可选，优先于本地视频）
+  - type:        项目类型（可选，用于首页筛选；缺省为「其他」）
 
 若提供 bilibili 字段则使用 Bilibili 嵌入播放器，
 否则同名 .mp4 文件会自动关联为演示视频。
@@ -54,11 +55,18 @@ def build():
 
         bilibili = data.get("bilibili")
 
+        type_val = data.get("type")
+        if type_val is None or (isinstance(type_val, str) and not type_val.strip()):
+            type_val = "其他"
+        elif isinstance(type_val, str):
+            type_val = type_val.strip()
+
         project = {
             "slug": slug,
             "name": data.get("name", slug),
             "description": data.get("description", ""),
             "technology": parse_tech(data.get("technology", "")),
+            "type": type_val,
             "bilibili": bilibili if bilibili else None,
             "video": f"projects/{slug}.mp4" if has_video and not bilibili else None,
         }

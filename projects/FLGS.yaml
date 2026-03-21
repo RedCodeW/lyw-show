@@ -1,4 +1,5 @@
 name: FLGS
+type: 科研类
 description: 引入Qwen解决三维领域模糊词汇分割问题，针对Qwen带来的性能瓶颈进行有效设计，降低幻觉问题并提高了接近80%的推理速度
 technology: Qwen、3D Gaussian Splatting、SAM、语义分割、三维重建
 result: Published on IEEE TFS（SCI一区）

@@ -1,4 +1,5 @@
 name: 佳佳引擎第一代
+type: 游戏开发类
 description: Web游戏引擎，支持可视化编程，组件式设计，适合初学者和小型项目开发
 technology: Vue3、WebGL、Pixijs、Spring boot
 bilibili: BV1MkAwzVEBa

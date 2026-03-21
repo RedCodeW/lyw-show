@@ -11,6 +11,7 @@ var PROJECT_DATA = [
       "语义分割",
       "三维重建"
     ],
+    "type": "科研类",
     "bilibili": "BV1gqAwz2EYF",
     "video": null,
     "result": "Published on IEEE TFS（SCI一区）"
@@ -18,12 +19,13 @@ var PROJECT_DATA = [
   {
     "slug": "G3DU",
     "name": "G3DU",
-    "description": "毫秒级的三维重建与分割框架，1秒钟从无姿态多视角，输入中完成场景的重建，并且可以根据自然语言描述，立即完成对对应物体的分割",
+    "description": "毫秒级的三维重建与分割框架，一次性从无姿态多视角输入中得到场景的重建与语义分割结果",
     "technology": [
       "3D Gaussian Splatting",
       "语义分割",
       "三维重建"
     ],
+    "type": "科研类",
     "bilibili": "BV1pXAwziEWX",
     "video": null,
     "result": "Submitted to Nips 2026"
@@ -38,6 +40,7 @@ var PROJECT_DATA = [
       "GLFW",
       "GLM"
     ],
+    "type": "游戏开发类",
     "bilibili": "BV1GeAwzUEjs",
     "video": null
   },
@@ -52,6 +55,7 @@ var PROJECT_DATA = [
       "语义分割",
       "三维重建"
     ],
+    "type": "科研类",
     "bilibili": "BV1gqAwz2E4X",
     "video": null,
     "result": "Submitted to ICML 2026"
@@ -66,7 +70,36 @@ var PROJECT_DATA = [
       "Pixijs",
       "Spring boot"
     ],
+    "type": "游戏开发类",
     "bilibili": "BV1MkAwzVEBa",
+    "video": null
+  },
+  {
+    "slug": "太空大战",
+    "name": "太空大战",
+    "description": "使用Unity及Timeline技术制作的第三人称太空射击游戏",
+    "technology": [
+      "Unity",
+      "C#",
+      "3D",
+      "游戏开发"
+    ],
+    "type": "游戏开发类",
+    "bilibili": "BV1GFAKzbEpJ",
+    "video": null
+  },
+  {
+    "slug": "太空探测器",
+    "name": "太空探测器",
+    "description": "使用Unity制作的3D版本的飞翔的小鸟游戏",
+    "technology": [
+      "Unity",
+      "C#",
+      "3D",
+      "游戏开发"
+    ],
+    "type": "游戏开发类",
+    "bilibili": "BV1aFAKztEG6",
     "video": null
   }
 ];
