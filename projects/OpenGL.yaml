@@ -1,3 +1,4 @@
 name: OpenGL渲染
 description: 使用OpenGL进行图形渲染的项目，展示了基本的3D图形绘制和相机控制
 technology: C++、OpenGL、GLFW、GLM
+bilibili: BV1GeAwzUEjs

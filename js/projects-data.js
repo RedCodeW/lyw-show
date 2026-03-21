@@ -11,8 +11,22 @@ var PROJECT_DATA = [
       "语义分割",
       "三维重建"
     ],
-    "video": "projects/FLGS.mp4",
+    "bilibili": "BV1gqAwz2EYF",
+    "video": null,
     "result": "Published on IEEE TFS（SCI一区）"
+  },
+  {
+    "slug": "G3DU",
+    "name": "G3DU",
+    "description": "毫秒级的三维重建与分割框架，1秒钟从无姿态多视角，输入中完成场景的重建，并且可以根据自然语言描述，立即完成对对应物体的分割",
+    "technology": [
+      "3D Gaussian Splatting",
+      "语义分割",
+      "三维重建"
+    ],
+    "bilibili": "BV1pXAwziEWX",
+    "video": null,
+    "result": "Submitted to Nips 2026"
   },
   {
     "slug": "OpenGL",
@@ -24,7 +38,8 @@ var PROJECT_DATA = [
       "GLFW",
       "GLM"
     ],
-    "video": "projects/OpenGL.mp4"
+    "bilibili": "BV1GeAwzUEjs",
+    "video": null
   },
   {
     "slug": "langvggt",
@@ -37,7 +52,8 @@ var PROJECT_DATA = [
       "语义分割",
       "三维重建"
     ],
-    "video": "projects/langvggt.mp4",
+    "bilibili": "BV1gqAwz2E4X",
+    "video": null,
     "result": "Submitted to ICML 2026"
   },
   {
@@ -50,6 +66,7 @@ var PROJECT_DATA = [
       "Pixijs",
       "Spring boot"
     ],
-    "video": "projects/佳佳引擎第一代.mp4"
+    "bilibili": "BV1MkAwzVEBa",
+    "video": null
   }
 ];

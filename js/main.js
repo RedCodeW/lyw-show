@@ -14,7 +14,17 @@
       card.style.transitionDelay = index * 0.12 + 's';
 
       var mediaHTML;
-      if (project.video) {
+      if (project.bilibili) {
+        mediaHTML =
+          '<div class="card-media card-media--bilibili">' +
+          '<iframe src="https://player.bilibili.com/player.html?bvid=' +
+          project.bilibili +
+          '&page=1&high_quality=1&danmaku=0&autoplay=0"' +
+          ' scrolling="no" frameborder="0" allowfullscreen="true"' +
+          ' sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">' +
+          '</iframe>' +
+          '</div>';
+      } else if (project.video) {
         mediaHTML =
           '<div class="card-media">' +
           '<video src="' +

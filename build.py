@@ -6,8 +6,10 @@ YAML 字段说明：
   - description: 项目描述（必填）
   - technology:  技术栈，用中文顿号或英文逗号分隔（必填）
   - result:      成果/成绩（可选，缺省则不展示）
+  - bilibili:    Bilibili 视频 BV 号（可选，优先于本地视频）
 
-同名 .mp4 文件会自动关联为演示视频。
+若提供 bilibili 字段则使用 Bilibili 嵌入播放器，
+否则同名 .mp4 文件会自动关联为演示视频。
 
 用法：python build.py
 """
@@ -50,12 +52,15 @@ def build():
         video_path = os.path.join(PROJECTS_DIR, f"{slug}.mp4")
         has_video = os.path.exists(video_path)
 
+        bilibili = data.get("bilibili")
+
         project = {
             "slug": slug,
             "name": data.get("name", slug),
             "description": data.get("description", ""),
             "technology": parse_tech(data.get("technology", "")),
-            "video": f"projects/{slug}.mp4" if has_video else None,
+            "bilibili": bilibili if bilibili else None,
+            "video": f"projects/{slug}.mp4" if has_video and not bilibili else None,
         }
 
         result = data.get("result")
@@ -75,9 +80,14 @@ def build():
 
     print("[OK] Generated: " + OUTPUT_FILE)
     for p in projects:
-        video_flag = "[video]" if p["video"] else "       "
+        if p["bilibili"]:
+            media_flag = "[bili] "
+        elif p["video"]:
+            media_flag = "[video]"
+        else:
+            media_flag = "       "
         result_flag = " | " + p.get("result", "") if "result" in p else ""
-        print("  " + video_flag + " " + p["name"] + result_flag)
+        print("  " + media_flag + " " + p["name"] + result_flag)
 
 
 if __name__ == "__main__":

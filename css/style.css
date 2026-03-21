@@ -390,6 +390,19 @@ video {
   object-fit: cover;
 }
 
+.card-media--bilibili {
+  position: relative;
+}
+
+.card-media--bilibili iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .card-placeholder {
   width: 100%;
   height: 100%;
