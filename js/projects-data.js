@@ -28,7 +28,7 @@ var PROJECT_DATA = [
     "type": "科研类",
     "bilibili": "BV1pXAwziEWX",
     "video": null,
-    "result": "Submitted to Nips 2026"
+    "result": "Nips 2026撤稿"
   },
   {
     "slug": "OpenGL",
