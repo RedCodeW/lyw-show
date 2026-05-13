@@ -61,7 +61,21 @@ var PROJECT_DATA = [
     "result": "Submitted to ICML 2026"
   },
   {
-    "slug": "佳佳引擎第一代",
+    "slug": "佳佳引擎第三代",
+    "name": "佳佳引擎第三代",
+    "description": "Web游戏引擎，支持可视化编程，组件式设计，适合初学者和小型项目开发",
+    "technology": [
+      "Vue3",
+      "WebGL",
+      "Pixijs",
+      "Electron"
+    ],
+    "type": "游戏开发类",
+    "bilibili": "BV1nS536zE9B",
+    "video": null
+  },
+  {
+    "slug": "佳佳引擎第二代",
     "name": "佳佳引擎第一代",
     "description": "Web游戏引擎，支持可视化编程，组件式设计，适合初学者和小型项目开发",
     "technology": [
